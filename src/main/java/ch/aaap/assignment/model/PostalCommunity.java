@@ -1,12 +1,16 @@
 package ch.aaap.assignment.model;
 
-public interface PostalCommunity {
+import lombok.Builder;
+import lombok.Data;
 
-  public String getZipCode();
+@Data
+@Builder
+public class PostalCommunity {
 
-  public String getZipCodeAddition();
+  public String zipCode;
 
-  public String getName();
+  public String zipCodeAddition;
 
-  // TODO add more features here representing the relations
+  public String name;
+
 }

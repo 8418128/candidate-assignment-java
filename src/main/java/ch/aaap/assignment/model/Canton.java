@@ -1,10 +1,17 @@
 package ch.aaap.assignment.model;
 
-public interface Canton {
+import java.util.Set;
+import lombok.Builder;
+import lombok.Data;
 
-  public String getCode();
+@Data
+@Builder
+public class Canton {
 
-  public String getName();
+  public String code;
 
-  // TODO add more features here representing the relations
+  public String name;
+
+  public Set<District> districts;
+
 }

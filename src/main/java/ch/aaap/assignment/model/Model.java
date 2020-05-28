@@ -1,14 +1,18 @@
 package ch.aaap.assignment.model;
 
 import java.util.Set;
+import lombok.Builder;
+import lombok.Data;
 
-public interface Model {
+@Data
+@Builder
+public class Model {
 
-  public Set<PoliticalCommunity> getPoliticalCommunities();
+  public Set<PoliticalCommunity> politicalCommunities;
 
-  public Set<PostalCommunity> getPostalCommunities();
+  public Set<PostalCommunity> postalCommunities;
 
-  public Set<Canton> getCantons();
+  public Set<Canton> cantons;
 
-  public Set<District> getDistricts();
+  public Set<District> districts;
 }

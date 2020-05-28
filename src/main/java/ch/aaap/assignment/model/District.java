@@ -1,10 +1,17 @@
 package ch.aaap.assignment.model;
 
-public interface District {
+import java.util.Set;
+import lombok.Builder;
+import lombok.Data;
 
-  public String getNumber();
+@Data
+@Builder
+public class District {
 
-  public String getName();
+  public String number;
 
-  // TODO add more features here representing the relations
+  public String name;
+
+  public Set<PoliticalCommunity> politicalCommunities;
+
 }
